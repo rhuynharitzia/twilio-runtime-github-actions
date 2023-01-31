@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies for the twilio function
         run: npm ci
       - name: Create environment file
-        run: echo $'test1=test1\ntest2=test2' > .env
+        run: echo $'test1=test1\ntest2=test2\ntest3=test3' > .env
       - name: Install twilio cli and run deploy command
         env:
          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
